@@ -1,0 +1,383 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Style for the product card container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+/* Style for each product card */
+.card {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Style for the product image */
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Adjust the height based on your preference */
+  object-fit: cover;
+}
+
+/* Style for the card body */
+.card-body {
+  padding: 15px;
+}
+
+/* Style for the card title */
+.card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for the card text */
+.card-text {
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Style for the loading indicator */
+p:empty::before {
+  content: "Loading...";
+  display: block;
+  text-align: center;
+  margin: 20px;
+  font-weight: bold;
+  color: #777;
+}
+
+
+
+body .navbar {
+  background-color: #131921 !important;
+  color: #ffffff !important;
+}
+
+/* Style for the Navbar brand */
+body .navbar-brand {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #ffffff !important;
+}
+
+/* Style for the Navbar links */
+body .navbar-nav .nav-link {
+  color: #ffffff !important;
+  margin: 0 15px;
+  font-size: 1.2em;
+  transition: color 0.3s ease-in-out;
+}
+
+body .navbar-nav .nav-link:hover {
+  color: #ffd700 !important; /* Amazon's yellow for hover color */
+}
+
+/* Style for the active link */
+body .navbar-nav .active {
+  color: #ffd700 !important; /* Amazon's yellow for active color */
+}
+
+/* Style for the dropdown */
+body .navbar-nav .dropdown-menu {
+  background-color: #131921 !important; /* Dark background color for dropdown */
+}
+
+/* Style for the dropdown links */
+body .navbar-nav .dropdown-menu a {
+  color: #ffffff !important;
+}
+
+/* Style for the dropdown link on hover */
+body .navbar-nav .dropdown-menu a:hover {
+  background-color: #232f3e !important; /* Darker background color on hover */
+}
+
+/* Style for the Navbar toggler icon */
+body .navbar-toggler-icon {
+  background-color: #ffffff !important;
+}
+
+/* Adjust the positioning of Home, Categories, and Products */
+body .navbar-nav .home-link {
+  margin-right: auto !important;
+}
+
+body .navbar-nav .categories-link,
+body .navbar-nav .products-link {
+  margin-right: 15px !important;
+}
+
+.carousel-inner {
+  transition: background-color 0.5s ease;
+}
+
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.carousel-caption {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  position:absolute;
+  right: 0;
+  transform: translateY(30%);
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+}
+
+
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: #333; /* Adjust the control arrow color */
+}
+
+.carousal-image {
+  max-height: 80vh;
+  object-fit: contain;
+  width: 100%;
+}
+
+/* Style for each category item */
+.categories-list-item {
+  border-radius: 2px;
+  background-color: #000 !important; 
+  text-align: center; 
+  overflow: hidden; 
+}
+
+
+/* Style for the category link */
+.categories-list-item a {
+  text-decoration: none;
+  display: block;
+  padding: 2px; 
+  color: #fff; 
+  font-size: 0.9em; 
+}
+
+.categories-list-item a:hover {
+  color: #ffd700; 
+}
+
+/* Style for the message when no categories are available */
+.no-categories {
+  text-align: center;
+  color: #777;
+  margin-top: 10px;
+}
+/* Style for the container */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Style for the product title */
+h2 {
+  color: #333;
+}
+
+/* Style for product details */
+.productDetails p{
+    color: black;
+  line-height: 1.5;
+  font-size: 1.2em;
+
+  
+}
+
+/* Style for the product image */
+.product-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Style for the additional images */
+.additional-images {
+  margin-top: 20px;
+}
+
+.additional-images img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+/* Style for the container */
+.product-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Style for the category heading */
+.category-heading {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+
+/* Style for the container */
+.product-container {
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color:#101010;
+  text-align: center;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+/* Style for the category heading */
+.category-heading {
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Make the text uppercase */
+}
+
+
+/* Style for the product list */
+.product-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+   background-color:#c9cfd6;
+}
+
+/* Style for each product item */
+.product-item {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Style for the product details */
+.product-details {
+  padding: 20px;
+}
+
+/* Style for the product title */
+.product-title {
+  color:black;
+  font-size: 2 rem;
+  margin-bottom: 10px;
+}
+
+/* Style for the product description */
+.product-description {
+  color: #101010;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+
+/* Style for the product price */
+.product-price {
+  color: #333;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+/* Style for the product image */
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Style for the view details link */
+.view-details-link {
+  display: block;
+  margin-top: 15px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.view-details-link:hover {
+  text-decoration: none;
+   color: black;
+}
+/* Footer */
+
+
+.footer {
+background-color: #333;
+color: #fff;
+
+text-align: center;
+padding: 10px;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer-links a {
+color: #fff;
+text-decoration: none;
+margin: 0 10px;
+font-size: 14px;
+}
+
+.social-icons a {
+color: #fff;
+text-decoration: none;
+margin: 0 10px;
+font-size: 20px;
+}
+
+.social-icons a:hover {
+color: #007bff;
+}
+
+.copyright {
+margin-top: 10px;
+font-size: 12px;
+}
+
+
