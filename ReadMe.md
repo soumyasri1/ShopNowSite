@@ -2,6 +2,8 @@
 
 This project is a React app developed with Vite. It includes a navigation bar, home page, and consumes various APIs for product information.
 
+# Hosting Link- https://cosmic-pavlova-fe3e47.netlify.app/
+
 ## Technologies Used
 
 - React.js
